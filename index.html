@@ -247,7 +247,15 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 <div style="display:none">
-<audio src="music\waves.mp3" preload= "auto" controls autoplay loop>    
+    <script type="text/javascript">
+    function setVolume()
+    {
+        mySound=document.getElementById("sound");
+        mySound.volume=0.02;
+    }
+    window.onload=setVolume;
+    </script>
+<audio id="sound" src="music\waves.mp3" preload= "auto" controls autoplay loop>    
     <embed
     src="/music/waves.mp3"
     width="180"
